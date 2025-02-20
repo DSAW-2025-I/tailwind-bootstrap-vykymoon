@@ -2,31 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Tailwind | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind | Stats Preview Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-900 flex justify-center items-center min-h-screen">
+  
+  <div class="container mx-auto px-8 md:px-36">
+    <div class="bg-gray-800 text-white rounded-lg overflow-hidden shadow-2xl flex flex-col md:flex-row">
+      
+      <div class="p-8 flex flex-col justify-center order-2 md:order-1 md:w-1/2">
+        <h1 class="text-[2.52rem] font-bold mb-0 mt-0 ml-4">
+          Get <span class="text-[hsl(277,64%,61%)]">insights</span> that help your business grow.
+        </h1>
+        
+        <p class="text-gray-400 mb-8 mr-4 ml-4 mt-0 ">
+          Discover the benefits of data analytics and make better decisions regarding revenue, 
+          customer experience, and overall efficiency.
+        </p>
 
-  Get insights that help your business grow.
+        <div class="flex flex-col md:flex-row gap-28 justify-center items-center mb-4">
+          <div class="text-center">
+            <h3 class="text-[1.7rem] font-bold">10k+</h3>
+            <p class="text-sm text-gray-400 uppercase">Companies</p>
+          </div>
+          
+          <div class="text-center">
+            <h3 class="text-[1.7rem] font-bold">314</h3>
+            <p class="text-sm text-gray-400 uppercase">Templates</p>
+          </div>
+          
+          <div class="text-center">
+            <h3 class="text-[1.7rem] font-bold">12m+</h3>
+            <p class="text-sm text-gray-400 uppercase">Queries</p>
+          </div>
+        </div>
+      </div>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Coded by <a href="#">Your Name Here</a>.
+      <div class="relative order-1 md:order-2 md:w-1/2">
+        <img src="images/image-header-desktop.jpg" 
+             alt="Imagen Violeta" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-[hsl(277,64%,61%)] opacity-70"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fixed bottom-0 left-0 w-full text-center p-2 text-neutral-400">
+    Coded by <a href="#">Victor Luna Mejia</a>.
   </div>
 </body>
 </html>
